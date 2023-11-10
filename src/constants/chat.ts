@@ -14,7 +14,7 @@ const dateString =
 export const _defaultSystemMessage =
   import.meta.env.VITE_DEFAULT_SYSTEM_MESSAGE ??
   `You are ChatGPT, a large language model trained by OpenAI.
-Carefully heed the user's instructions. 
+Carefully heed the user's instructions.
 Respond using Markdown.`;
 
 export const modelOptions: ModelOptions[] = [
@@ -22,9 +22,8 @@ export const modelOptions: ModelOptions[] = [
   'gpt-3.5-turbo-16k',
   'gpt-4',
   'gpt-4-32k',
-  // 'gpt-3.5-turbo-0301',
-  // 'gpt-4-0314',
-  // 'gpt-4-32k-0314',
+  'gpt-4-1106-preview',
+  'gpt-4-vision-preview',
 ];
 
 export const defaultModel = 'gpt-3.5-turbo';
@@ -41,6 +40,8 @@ export const modelMaxToken = {
   'gpt-4-32k': 32768,
   'gpt-4-32k-0314': 32768,
   'gpt-4-32k-0613': 32768,
+  'gpt-4-vision-preview': 128000,
+  'gpt-4-1106-preview': 128000,
 };
 
 export const modelCost = {
